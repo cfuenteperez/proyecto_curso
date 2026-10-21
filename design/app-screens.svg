@@ -1,0 +1,389 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="650"
+     viewBox="0 0 1500 650"
+     font-family="Roboto, Arial, sans-serif">
+
+  <defs>
+    <filter id="s1" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#000" flood-opacity="0.14"/>
+    </filter>
+    <filter id="s3" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000" flood-opacity="0.20"/>
+    </filter>
+    <filter id="s8" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000" flood-opacity="0.26"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas background -->
+  <rect width="1500" height="650" fill="#ECEFF1"/>
+
+  <!-- Document title -->
+  <text x="750" y="36" text-anchor="middle"
+        font-size="16" font-weight="500" fill="#455A64" letter-spacing="0.4">
+    Gestor de Tareas ICE — Pantallas principales (Material UI)
+  </text>
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- PANTALLA 1 · Lista vacía                                       -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <g transform="translate(73,78)">
+    <text x="125" y="-8" text-anchor="middle" font-size="11" font-weight="500" fill="#546E7A">
+      1 · Lista vacía
+    </text>
+
+    <!-- Marco de pantalla -->
+    <rect x="0" y="0" width="250" height="520" rx="10" fill="#F5F5F5" filter="url(#s1)"/>
+
+    <!-- AppBar -->
+    <rect x="0" y="0" width="250" height="56" rx="10" fill="#1976D2"/>
+    <rect x="0" y="28" width="250" height="28" fill="#1976D2"/>
+    <rect x="14" y="19" width="20" height="3" rx="1.5" fill="rgba(255,255,255,0.85)"/>
+    <rect x="14" y="27" width="20" height="3" rx="1.5" fill="rgba(255,255,255,0.85)"/>
+    <rect x="14" y="35" width="20" height="3" rx="1.5" fill="rgba(255,255,255,0.85)"/>
+    <text x="46" y="37" font-size="17" font-weight="500" fill="white">Mis Tareas</text>
+    <circle cx="226" cy="22" r="2.5" fill="rgba(255,255,255,0.8)"/>
+    <circle cx="226" cy="30" r="2.5" fill="rgba(255,255,255,0.8)"/>
+    <circle cx="226" cy="38" r="2.5" fill="rgba(255,255,255,0.8)"/>
+
+    <!-- Empty state -->
+    <circle cx="125" cy="218" r="58" fill="#E3F2FD"/>
+    <rect x="107" y="194" width="40" height="52" rx="4" fill="white" stroke="#90CAF9" stroke-width="1.5"/>
+    <rect x="119" y="189" width="18" height="10" rx="5" fill="#90CAF9"/>
+    <rect x="113" y="208" width="28" height="3" rx="1.5" fill="#1976D2"/>
+    <rect x="113" y="217" width="22" height="3" rx="1.5" fill="#BBDEFB"/>
+    <rect x="113" y="226" width="25" height="3" rx="1.5" fill="#BBDEFB"/>
+    <rect x="113" y="235" width="18" height="3" rx="1.5" fill="#BBDEFB"/>
+    <circle cx="152" cy="198" r="11" fill="#1976D2"/>
+    <text x="152" y="202" text-anchor="middle" font-size="8" font-weight="700" fill="white">AI</text>
+
+    <text x="125" y="302" text-anchor="middle" font-size="14" font-weight="500" fill="#37474F">Aún no tienes tareas</text>
+    <text x="125" y="320" text-anchor="middle" font-size="11" fill="#90A4AE">Crea tu primera tarea</text>
+    <text x="125" y="335" text-anchor="middle" font-size="11" fill="#90A4AE">y priorízala con IA</text>
+
+    <!-- Outlined button -->
+    <rect x="63" y="354" width="124" height="36" rx="4" fill="white" stroke="#1976D2" stroke-width="1.5" filter="url(#s1)"/>
+    <text x="125" y="377" text-anchor="middle" font-size="12" font-weight="500" fill="#1976D2">+ Crear tarea</text>
+
+    <!-- FAB -->
+    <circle cx="210" cy="476" r="26" fill="#1976D2" filter="url(#s3)"/>
+    <text x="210" y="484" text-anchor="middle" font-size="28" font-weight="300" fill="white">+</text>
+  </g>
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- PANTALLA 2 · Lista con tareas                                  -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <g transform="translate(349,78)">
+    <text x="125" y="-8" text-anchor="middle" font-size="11" font-weight="500" fill="#546E7A">
+      2 · Lista de tareas
+    </text>
+
+    <rect x="0" y="0" width="250" height="520" rx="10" fill="#F5F5F5" filter="url(#s1)"/>
+
+    <!-- AppBar -->
+    <rect x="0" y="0" width="250" height="56" rx="10" fill="#1976D2"/>
+    <rect x="0" y="28" width="250" height="28" fill="#1976D2"/>
+    <rect x="14" y="19" width="20" height="3" rx="1.5" fill="rgba(255,255,255,0.85)"/>
+    <rect x="14" y="27" width="20" height="3" rx="1.5" fill="rgba(255,255,255,0.85)"/>
+    <rect x="14" y="35" width="20" height="3" rx="1.5" fill="rgba(255,255,255,0.85)"/>
+    <text x="46" y="37" font-size="17" font-weight="500" fill="white">Mis Tareas</text>
+    <rect x="146" y="17" width="56" height="22" rx="11" fill="rgba(255,255,255,0.18)"/>
+    <text x="174" y="32" text-anchor="middle" font-size="10" fill="white">3 tareas</text>
+    <circle cx="232" cy="22" r="2.5" fill="rgba(255,255,255,0.8)"/>
+    <circle cx="232" cy="30" r="2.5" fill="rgba(255,255,255,0.8)"/>
+    <circle cx="232" cy="38" r="2.5" fill="rgba(255,255,255,0.8)"/>
+
+    <text x="14" y="74" font-size="9.5" fill="#9E9E9E">Ordenadas por ICE (mayor a menor)</text>
+
+    <!-- Tarea 1 (alta prioridad) -->
+    <rect x="10" y="82" width="230" height="86" rx="8" fill="white" filter="url(#s1)"/>
+    <rect x="178" y="90" width="52" height="22" rx="4" fill="#E8F5E9"/>
+    <text x="204" y="105" text-anchor="middle" font-size="11" font-weight="700" fill="#2E7D32">ICE 14</text>
+    <text x="22" y="106" font-size="12" font-weight="500" fill="#212121">Preparar clase de React</text>
+    <text x="22" y="121" font-size="10" fill="#757575">Crear ejemplos de componentes</text>
+    <text x="22" y="133" font-size="10" fill="#757575">y estado</text>
+    <rect x="22" y="141" width="58" height="17" rx="8.5" fill="#E3F2FD"/>
+    <text x="51" y="153.5" text-anchor="middle" font-size="9" fill="#1565C0">pendiente</text>
+    <circle cx="196" cy="152" r="10" fill="#F1F8E9"/>
+    <text x="196" y="156.5" text-anchor="middle" font-size="12" fill="#388E3C">&#10003;</text>
+    <circle cx="220" cy="152" r="10" fill="#FFEBEE"/>
+    <text x="220" y="156.5" text-anchor="middle" font-size="12" fill="#C62828">&#10005;</text>
+
+    <!-- Tarea 2 (media prioridad) -->
+    <rect x="10" y="178" width="230" height="86" rx="8" fill="white" filter="url(#s1)"/>
+    <rect x="178" y="186" width="52" height="22" rx="4" fill="#FFF3E0"/>
+    <text x="204" y="201" text-anchor="middle" font-size="11" font-weight="700" fill="#E65100">ICE 8.5</text>
+    <text x="22" y="202" font-size="12" font-weight="500" fill="#212121">Diseñar componentes UI</text>
+    <text x="22" y="217" font-size="10" fill="#757575">Paleta de colores y sistema</text>
+    <text x="22" y="229" font-size="10" fill="#757575">de estilos con MUI</text>
+    <rect x="22" y="237" width="58" height="17" rx="8.5" fill="#E3F2FD"/>
+    <text x="51" y="249.5" text-anchor="middle" font-size="9" fill="#1565C0">pendiente</text>
+    <circle cx="196" cy="248" r="10" fill="#F1F8E9"/>
+    <text x="196" y="252.5" text-anchor="middle" font-size="12" fill="#388E3C">&#10003;</text>
+    <circle cx="220" cy="248" r="10" fill="#FFEBEE"/>
+    <text x="220" y="252.5" text-anchor="middle" font-size="12" fill="#C62828">&#10005;</text>
+
+    <!-- Tarea 3 (completada) -->
+    <rect x="10" y="274" width="230" height="80" rx="8" fill="#FAFAFA" filter="url(#s1)"/>
+    <rect x="178" y="282" width="52" height="22" rx="4" fill="#F5F5F5"/>
+    <text x="204" y="297" text-anchor="middle" font-size="11" font-weight="600" fill="#BDBDBD">ICE 3.2</text>
+    <text x="22" y="299" font-size="12" fill="#BDBDBD">Escribir tests unitarios</text>
+    <line x1="22" y1="296" x2="152" y2="296" stroke="#BDBDBD" stroke-width="1"/>
+    <text x="22" y="314" font-size="10" fill="#BDBDBD">Cobertura con Vitest</text>
+    <rect x="22" y="322" width="72" height="17" rx="8.5" fill="#E8F5E9"/>
+    <text x="58" y="334.5" text-anchor="middle" font-size="9" fill="#2E7D32">completada &#10003;</text>
+    <circle cx="220" cy="333" r="10" fill="#FFEBEE"/>
+    <text x="220" y="337.5" text-anchor="middle" font-size="12" fill="#C62828">&#10005;</text>
+
+    <!-- FAB -->
+    <circle cx="210" cy="476" r="26" fill="#1976D2" filter="url(#s3)"/>
+    <text x="210" y="484" text-anchor="middle" font-size="28" font-weight="300" fill="white">+</text>
+  </g>
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- PANTALLA 3 · TaskFormDialog: formulario vacío                  -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <g transform="translate(625,78)">
+    <text x="125" y="-8" text-anchor="middle" font-size="11" font-weight="500" fill="#546E7A">
+      3 · Nueva tarea (formulario)
+    </text>
+
+    <!-- Fondo con AppBar atenuado -->
+    <rect x="0" y="0" width="250" height="520" rx="10" fill="#F5F5F5" filter="url(#s1)"/>
+    <rect x="0" y="0" width="250" height="56" rx="10" fill="#1565C0"/>
+    <rect x="0" y="28" width="250" height="28" fill="#1565C0"/>
+    <text x="46" y="37" font-size="17" font-weight="500" fill="rgba(255,255,255,0.25)">Mis Tareas</text>
+    <!-- Scrim -->
+    <rect x="0" y="0" width="250" height="520" rx="10" fill="rgba(0,0,0,0.46)"/>
+
+    <!-- Dialog surface -->
+    <rect x="10" y="24" width="230" height="480" rx="12" fill="white" filter="url(#s8)"/>
+
+    <!-- Dialog header -->
+    <text x="26" y="56" font-size="16" font-weight="500" fill="#212121">Nueva tarea</text>
+    <circle cx="222" cy="50" r="11" fill="#F5F5F5"/>
+    <text x="222" y="55" text-anchor="middle" font-size="13" fill="#757575">&#10005;</text>
+    <line x1="10" y1="70" x2="240" y2="70" stroke="#EEEEEE" stroke-width="1"/>
+
+    <!-- TextField: Título (outlined, focused) -->
+    <rect x="22" y="80" width="206" height="54" rx="4" fill="white" stroke="#1976D2" stroke-width="2"/>
+    <rect x="33" y="75" width="34" height="10" rx="2" fill="white"/>
+    <text x="34" y="83" font-size="9.5" fill="#1976D2">Título *</text>
+    <text x="30" y="110" font-size="12" fill="#212121">Preparar clase de React</text>
+
+    <!-- TextField: Descripción (outlined) -->
+    <rect x="22" y="144" width="206" height="68" rx="4" fill="white" stroke="#BDBDBD" stroke-width="1"/>
+    <rect x="33" y="139" width="54" height="10" rx="2" fill="white"/>
+    <text x="34" y="147" font-size="9.5" fill="#757575">Descripción</text>
+    <text x="30" y="172" font-size="11" fill="#212121">Crear ejemplos prácticos</text>
+    <text x="30" y="187" font-size="11" fill="#212121">sobre componentes y estado</text>
+
+    <!-- Sección ICE -->
+    <line x1="22" y1="226" x2="238" y2="226" stroke="#EEEEEE" stroke-width="1"/>
+    <text x="22" y="242" font-size="10" font-weight="600" fill="#78909C" letter-spacing="1">PUNTUACIÓN ICE</text>
+
+    <!-- Botón Sugerir ICE (outlined primary, activo) -->
+    <rect x="22" y="250" width="206" height="38" rx="4" fill="white" stroke="#1976D2" stroke-width="1.5"/>
+    <circle cx="38" cy="269" r="9" fill="#1976D2"/>
+    <text x="38" y="273" text-anchor="middle" font-size="7.5" font-weight="700" fill="white">AI</text>
+    <text x="133" y="274" text-anchor="middle" font-size="12" font-weight="500" fill="#1976D2">Sugerir ICE con IA</text>
+
+    <!-- IceFields vacíos -->
+    <text x="22" y="306" font-size="10" fill="#BDBDBD">Impacto</text>
+    <rect x="22" y="312" width="180" height="4" rx="2" fill="#E0E0E0"/>
+    <text x="208" y="317" font-size="10" fill="#BDBDBD">—</text>
+
+    <text x="22" y="332" font-size="10" fill="#BDBDBD">Confianza</text>
+    <rect x="22" y="338" width="180" height="4" rx="2" fill="#E0E0E0"/>
+    <text x="208" y="343" font-size="10" fill="#BDBDBD">—</text>
+
+    <text x="22" y="358" font-size="10" fill="#BDBDBD">Esfuerzo</text>
+    <rect x="22" y="364" width="180" height="4" rx="2" fill="#E0E0E0"/>
+    <text x="208" y="369" font-size="10" fill="#BDBDBD">—</text>
+
+    <!-- IceScoreBadge vacío -->
+    <rect x="76" y="382" width="98" height="28" rx="14" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="1.5"/>
+    <text x="125" y="400" text-anchor="middle" font-size="11" fill="#BDBDBD">ICE: —</text>
+
+    <!-- Actions -->
+    <line x1="10" y1="422" x2="240" y2="422" stroke="#EEEEEE" stroke-width="1"/>
+    <text x="158" y="450" text-anchor="middle" font-size="12" font-weight="500" fill="#757575">CANCELAR</text>
+    <rect x="178" y="432" width="58" height="32" rx="4" fill="#E0E0E0"/>
+    <text x="207" y="452" text-anchor="middle" font-size="11" font-weight="500" fill="#9E9E9E">GUARDAR</text>
+  </g>
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- PANTALLA 4 · IceSuggestionPanel con sugerencia de IA          -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <g transform="translate(901,78)">
+    <text x="125" y="-8" text-anchor="middle" font-size="11" font-weight="500" fill="#546E7A">
+      4 · Sugerencia ICE de IA
+    </text>
+
+    <rect x="0" y="0" width="250" height="520" rx="10" fill="#F5F5F5" filter="url(#s1)"/>
+    <rect x="0" y="0" width="250" height="56" rx="10" fill="#1565C0"/>
+    <rect x="0" y="28" width="250" height="28" fill="#1565C0"/>
+    <text x="46" y="37" font-size="17" font-weight="500" fill="rgba(255,255,255,0.25)">Mis Tareas</text>
+    <rect x="0" y="0" width="250" height="520" rx="10" fill="rgba(0,0,0,0.46)"/>
+
+    <!-- Dialog surface -->
+    <rect x="10" y="8" width="230" height="494" rx="12" fill="white" filter="url(#s8)"/>
+
+    <!-- Dialog header -->
+    <text x="26" y="40" font-size="16" font-weight="500" fill="#212121">Nueva tarea</text>
+    <circle cx="222" cy="34" r="11" fill="#F5F5F5"/>
+    <text x="222" y="39" text-anchor="middle" font-size="13" fill="#757575">&#10005;</text>
+    <line x1="10" y1="54" x2="240" y2="54" stroke="#EEEEEE" stroke-width="1"/>
+
+    <!-- Campos colapsados (rellenos, solo lectura) -->
+    <rect x="22" y="62" width="206" height="38" rx="4" fill="#FAFAFA" stroke="#EEEEEE" stroke-width="1"/>
+    <text x="30" y="74" font-size="9" fill="#9E9E9E">Título</text>
+    <text x="30" y="90" font-size="11" fill="#212121">Preparar clase de React</text>
+
+    <rect x="22" y="106" width="206" height="52" rx="4" fill="#FAFAFA" stroke="#EEEEEE" stroke-width="1"/>
+    <text x="30" y="118" font-size="9" fill="#9E9E9E">Descripción</text>
+    <text x="30" y="134" font-size="10.5" fill="#212121">Crear ejemplos prácticos sobre</text>
+    <text x="30" y="149" font-size="10.5" fill="#212121">componentes y estado</text>
+
+    <!-- Sección ICE -->
+    <line x1="22" y1="170" x2="238" y2="170" stroke="#EEEEEE" stroke-width="1"/>
+    <text x="22" y="184" font-size="10" font-weight="600" fill="#78909C" letter-spacing="1">PUNTUACIÓN ICE</text>
+
+    <!-- IceSuggestionPanel -->
+    <rect x="22" y="192" width="206" height="96" rx="8" fill="#E3F2FD" stroke="#BBDEFB" stroke-width="1"/>
+    <text x="32" y="210" font-size="10" font-weight="500" fill="#0D47A1">&#9733; Sugerencia de IA</text>
+    <rect x="170" y="200" width="50" height="17" rx="8.5" fill="#1976D2"/>
+    <text x="195" y="212.5" text-anchor="middle" font-size="8.5" fill="white">aplicado</text>
+
+    <!-- Cajas de valores I · C · E -->
+    <rect x="30" y="218" width="50" height="42" rx="5" fill="white"/>
+    <text x="55" y="231" text-anchor="middle" font-size="9" fill="#546E7A">Impacto</text>
+    <text x="55" y="249" text-anchor="middle" font-size="17" font-weight="700" fill="#1976D2">8</text>
+
+    <rect x="91" y="218" width="50" height="42" rx="5" fill="white"/>
+    <text x="116" y="231" text-anchor="middle" font-size="9" fill="#546E7A">Confianza</text>
+    <text x="116" y="249" text-anchor="middle" font-size="17" font-weight="700" fill="#1976D2">7</text>
+
+    <rect x="152" y="218" width="50" height="42" rx="5" fill="white"/>
+    <text x="177" y="231" text-anchor="middle" font-size="9" fill="#546E7A">Esfuerzo</text>
+    <text x="177" y="249" text-anchor="middle" font-size="17" font-weight="700" fill="#1976D2">4</text>
+
+    <!-- Score calculado en panel -->
+    <text x="32" y="275" font-size="10" fill="#1565C0">ICE calculado:</text>
+    <text x="128" y="275" font-size="14" font-weight="700" fill="#0D47A1">14.0</text>
+
+    <!-- IceFields con valores aplicados (sliders activos) -->
+    <!-- Impacto = 8 → 80% de 180px = 144px -->
+    <text x="22" y="304" font-size="10" fill="#424242">Impacto</text>
+    <rect x="22" y="310" width="180" height="4" rx="2" fill="#BBDEFB"/>
+    <rect x="22" y="310" width="144" height="4" rx="2" fill="#1976D2"/>
+    <circle cx="166" cy="312" r="7" fill="#1976D2" stroke="white" stroke-width="2"/>
+    <text x="210" y="315" font-size="10" font-weight="600" fill="#1976D2">8</text>
+
+    <!-- Confianza = 7 → 70% = 126px -->
+    <text x="22" y="330" font-size="10" fill="#424242">Confianza</text>
+    <rect x="22" y="336" width="180" height="4" rx="2" fill="#BBDEFB"/>
+    <rect x="22" y="336" width="126" height="4" rx="2" fill="#1976D2"/>
+    <circle cx="148" cy="338" r="7" fill="#1976D2" stroke="white" stroke-width="2"/>
+    <text x="210" y="341" font-size="10" font-weight="600" fill="#1976D2">7</text>
+
+    <!-- Esfuerzo = 4 → 40% = 72px -->
+    <text x="22" y="356" font-size="10" fill="#424242">Esfuerzo</text>
+    <rect x="22" y="362" width="180" height="4" rx="2" fill="#BBDEFB"/>
+    <rect x="22" y="362" width="72" height="4" rx="2" fill="#1976D2"/>
+    <circle cx="94" cy="364" r="7" fill="#1976D2" stroke="white" stroke-width="2"/>
+    <text x="210" y="367" font-size="10" font-weight="600" fill="#1976D2">4</text>
+
+    <!-- IceScoreBadge activo (verde) -->
+    <rect x="70" y="380" width="110" height="30" rx="15" fill="#E8F5E9" stroke="#81C784" stroke-width="1.5"/>
+    <text x="125" y="399" text-anchor="middle" font-size="12" font-weight="600" fill="#2E7D32">ICE: 14.0</text>
+
+    <!-- Actions -->
+    <line x1="10" y1="422" x2="240" y2="422" stroke="#EEEEEE" stroke-width="1"/>
+    <text x="158" y="450" text-anchor="middle" font-size="12" font-weight="500" fill="#757575">CANCELAR</text>
+    <rect x="176" y="432" width="58" height="32" rx="4" fill="#1976D2" filter="url(#s1)"/>
+    <text x="205" y="452" text-anchor="middle" font-size="11" font-weight="500" fill="white">GUARDAR</text>
+  </g>
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- PANTALLA 5 · Tarea confirmada en lista                         -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <g transform="translate(1177,78)">
+    <text x="125" y="-8" text-anchor="middle" font-size="11" font-weight="500" fill="#546E7A">
+      5 · Tarea confirmada
+    </text>
+
+    <rect x="0" y="0" width="250" height="520" rx="10" fill="#F5F5F5" filter="url(#s1)"/>
+
+    <!-- AppBar -->
+    <rect x="0" y="0" width="250" height="56" rx="10" fill="#1976D2"/>
+    <rect x="0" y="28" width="250" height="28" fill="#1976D2"/>
+    <rect x="14" y="19" width="20" height="3" rx="1.5" fill="rgba(255,255,255,0.85)"/>
+    <rect x="14" y="27" width="20" height="3" rx="1.5" fill="rgba(255,255,255,0.85)"/>
+    <rect x="14" y="35" width="20" height="3" rx="1.5" fill="rgba(255,255,255,0.85)"/>
+    <text x="46" y="37" font-size="17" font-weight="500" fill="white">Mis Tareas</text>
+    <rect x="146" y="17" width="56" height="22" rx="11" fill="rgba(255,255,255,0.18)"/>
+    <text x="174" y="32" text-anchor="middle" font-size="10" fill="white">4 tareas</text>
+    <circle cx="232" cy="22" r="2.5" fill="rgba(255,255,255,0.8)"/>
+    <circle cx="232" cy="30" r="2.5" fill="rgba(255,255,255,0.8)"/>
+    <circle cx="232" cy="38" r="2.5" fill="rgba(255,255,255,0.8)"/>
+
+    <text x="14" y="74" font-size="9.5" fill="#9E9E9E">Ordenadas por ICE (mayor a menor)</text>
+
+    <!-- Tarea NUEVA (resaltada, primera posición) -->
+    <rect x="10" y="82" width="230" height="94" rx="8" fill="#E3F2FD" filter="url(#s3)" stroke="#90CAF9" stroke-width="1"/>
+    <rect x="14" y="86" width="38" height="15" rx="7.5" fill="#1976D2"/>
+    <text x="33" y="97.5" text-anchor="middle" font-size="7.5" font-weight="700" fill="white">NUEVA</text>
+    <rect x="178" y="90" width="52" height="22" rx="4" fill="#C8E6C9"/>
+    <text x="204" y="105" text-anchor="middle" font-size="11" font-weight="700" fill="#1B5E20">ICE 14</text>
+    <text x="22" y="118" font-size="12" font-weight="500" fill="#212121">Preparar clase de React</text>
+    <text x="22" y="133" font-size="10" fill="#757575">Crear ejemplos de componentes</text>
+    <text x="22" y="145" font-size="10" fill="#757575">y estado</text>
+    <rect x="22" y="154" width="58" height="17" rx="8.5" fill="white" stroke="#90CAF9" stroke-width="0.5"/>
+    <text x="51" y="166.5" text-anchor="middle" font-size="9" fill="#1565C0">pendiente</text>
+    <circle cx="196" cy="164" r="10" fill="#F1F8E9"/>
+    <text x="196" y="168.5" text-anchor="middle" font-size="12" fill="#388E3C">&#10003;</text>
+    <circle cx="220" cy="164" r="10" fill="#FFEBEE"/>
+    <text x="220" y="168.5" text-anchor="middle" font-size="12" fill="#C62828">&#10005;</text>
+
+    <!-- Tarea 2 -->
+    <rect x="10" y="186" width="230" height="82" rx="8" fill="white" filter="url(#s1)"/>
+    <rect x="178" y="194" width="52" height="22" rx="4" fill="#FFF3E0"/>
+    <text x="204" y="209" text-anchor="middle" font-size="11" font-weight="700" fill="#E65100">ICE 8.5</text>
+    <text x="22" y="210" font-size="12" font-weight="500" fill="#212121">Diseñar componentes UI</text>
+    <text x="22" y="225" font-size="10" fill="#757575">Paleta de colores y estilos</text>
+    <text x="22" y="237" font-size="10" fill="#757575">con MUI</text>
+    <rect x="22" y="244" width="58" height="17" rx="8.5" fill="#E3F2FD"/>
+    <text x="51" y="256.5" text-anchor="middle" font-size="9" fill="#1565C0">pendiente</text>
+    <circle cx="196" cy="254" r="10" fill="#F1F8E9"/>
+    <text x="196" y="258.5" text-anchor="middle" font-size="12" fill="#388E3C">&#10003;</text>
+    <circle cx="220" cy="254" r="10" fill="#FFEBEE"/>
+    <text x="220" y="258.5" text-anchor="middle" font-size="12" fill="#C62828">&#10005;</text>
+
+    <!-- Tarea 3 -->
+    <rect x="10" y="278" width="230" height="68" rx="8" fill="white" filter="url(#s1)"/>
+    <rect x="178" y="286" width="52" height="22" rx="4" fill="#FFF3E0"/>
+    <text x="204" y="301" text-anchor="middle" font-size="11" font-weight="600" fill="#BF360C">ICE 5</text>
+    <text x="22" y="301" font-size="12" font-weight="500" fill="#212121">Configurar Vite + TypeScript</text>
+    <text x="22" y="316" font-size="10" fill="#757575">Setup inicial del proyecto</text>
+    <rect x="22" y="324" width="58" height="17" rx="8.5" fill="#E3F2FD"/>
+    <text x="51" y="336.5" text-anchor="middle" font-size="9" fill="#1565C0">pendiente</text>
+    <circle cx="196" cy="334" r="10" fill="#F1F8E9"/>
+    <text x="196" y="338.5" text-anchor="middle" font-size="12" fill="#388E3C">&#10003;</text>
+    <circle cx="220" cy="334" r="10" fill="#FFEBEE"/>
+    <text x="220" y="338.5" text-anchor="middle" font-size="12" fill="#C62828">&#10005;</text>
+
+    <!-- FAB -->
+    <circle cx="210" cy="476" r="26" fill="#1976D2" filter="url(#s3)"/>
+    <text x="210" y="484" text-anchor="middle" font-size="28" font-weight="300" fill="white">+</text>
+
+    <!-- Snackbar -->
+    <rect x="8" y="447" width="190" height="38" rx="6" fill="#323232" filter="url(#s3)"/>
+    <text x="22" y="469" font-size="11" fill="white">Tarea guardada</text>
+    <text x="152" y="469" font-size="11" font-weight="600" fill="#81C784">OK</text>
+  </g>
+
+  <!-- Leyenda de componentes -->
+  <text x="750" y="620" text-anchor="middle" font-size="10" fill="#B0BEC5">
+    App.tsx · AppHeader · TaskList · TaskItem · EmptyState · TaskFormDialog · IceFields · IceSuggestionPanel · IceScoreBadge · aiIceService
+  </text>
+</svg>
