@@ -18,6 +18,16 @@ Aplicación web de una sola página para gestionar tareas y priorizarlas con el 
 - Corregir: `npm run lint:fix` y `npm run format`.
 - Compilar: `npm run build` (comprueba tipos y genera `dist/`).
 
+## Flujo de trabajo con Git
+
+Git flow en `cfuenteperez/proyecto_curso` con dos ramas permanentes: `main` (versión estable) y `dev` (integración y rama por defecto). Las dos están protegidas, también para los administradores: solo cambian mediante una PR, sin push directo ni force push, y la PR no se puede fusionar mientras tenga hilos de conversación sin resolver o conflictos.
+
+- Cada issue se trabaja en una rama que parte de `dev`: `feature/<número>-<descripción-corta>` (o `fix/…` si es un error).
+- La PR de una issue va siempre contra `dev`, nunca contra `main`, e incluye `Closes #<número>` en la descripción.
+- `main` solo recibe PRs desde `dev`.
+- Si la PR tiene conflictos, fusiona `origin/dev` en la rama y resuélvelos en local. No reescribas el historial de una rama ya publicada.
+- `Closes #<número>` cierra la issue al fusionar porque `dev` es la rama por defecto. Si la rama por defecto vuelve a ser `main`, las issues dejarán de cerrarse solas.
+
 ## Arquitectura
 
 ### Capas
